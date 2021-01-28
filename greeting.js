@@ -12,8 +12,8 @@ function saveName(text){
 function handleSubmit(event){
     event.preventDefault();
     const currentValue = input.value;
-    paintGreeting(currentValue);
     saveName(currentValue);
+    paintGreeting(currentValue, currentValue);
 }
 
 function askForName(){
@@ -21,17 +21,27 @@ function askForName(){
     form.addEventListener("submit", handleSubmit);
 }
 
-function paintGreeting(text){
-    form.classList.remove(SHOWING_CN);
-    greetings.classList.add(SHOWING_CN);
-    
+function getHours(){
     const date = new Date();
     const hours = date.getHours();
+    return hours;
+}
+
+function paintGreeting(hours, text){
+    form.classList.remove(SHOWING_CN);
+    greetings.classList.add(SHOWING_CN);
+    let greetMes = "message";
+
+    if(hours === text){
+        hours = getHours();
+        setInterval(getHours, 180000);
+    }
+    
     if(hours >= 5 && hours<=11){
-        const greetMes = "Morning";
+        greetMes = "Morning";
     } else if(hours >= 12 && hours <= 16){
         greetMes = "Afternoon";
-    } else if(hours >= 15 && hours <= 20){
+    } else if(hours >= 17 && hours <= 20){
         greetMes = "Evening";
     } else {
         greetMes = "Night";
@@ -44,7 +54,9 @@ function loadName(){
     if(currentUser === null){
         askForName();
     } else {
-        paintGreeting(currentUser);
+        const currentHour = getHours();
+        setInterval(getHours, 180000);
+        paintGreeting(currentHour, currentUser);
     }
 }
 
