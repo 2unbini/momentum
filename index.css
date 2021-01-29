@@ -1,12 +1,12 @@
 body {
-    background-color: white;
+    background-color: rgb(11, 19, 33);
 }
 
 .css-tickin {
     color : white;
     text-shadow: 0 0 3px cornsilk, 0 0 10px cornsilk, 0 0 20px cornsilk;
     margin-bottom: 10px;
-    margin-top: 11%;
+    margin-top: 220px;
     font-size: medium;
 }
 
@@ -44,7 +44,7 @@ body {
     padding-bottom: 10px;
     padding-left: 5px;
     padding-right: 5px;
-    border: 0.2px solid rgba(148, 148, 148, 0.2);
+    border: 1px solid rgba(196, 190, 174, 0.2);
     border-left: none;
     border-right: none;
 }
@@ -56,6 +56,7 @@ body {
 }
 .css-toDoForm {
     text-align: center;
+
 }
 
 /*자바스크립트 코드 실행시 생겨나는 버튼 등은 html 문서에서 클래스 이름을 지정해주지 못한다!
@@ -66,6 +67,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     float: right; /*버튼 오른쪽 정렬하는 방법*/
     padding: 1px;
+    color: cornsilk;
 }
 
 .css-li{
@@ -81,6 +83,7 @@ body {
     font-size: small;
     font-family: Arial, Helvetica, sans-serif;
     word-break: break-all; /*줄바꿈 : 글자를 기준으로 줄바꿈*/
+    color: cornsilk;
 }
 
 .css-input{
@@ -89,10 +92,12 @@ body {
     padding: 10px;
     width: 200px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 input::placeholder{
-    color: rgba(148, 148, 148, 0.4);
+    color: rgba(150, 143, 143, 0.4);
+    text-shadow: 0 0 2.5px rgb(184, 179, 162);
     font-style: italic;
 }
 
