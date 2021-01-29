@@ -5,17 +5,17 @@ body {
 .css-tickin {
     color : white;
     text-shadow: 0 0 3px cornsilk, 0 0 10px cornsilk, 0 0 20px cornsilk;
-    margin-bottom: 0;
-    margin-top: 200px;
+    margin-bottom: 10px;
+    margin-top: 11%;
     font-size: medium;
 }
 
 .css-clock {
-    color : rgb(153, 109, 255);
+    color : rgb(255, 255, 255);
     font-size: 50px;
     text-align: center;
     font-family: 'Chakra Petch', sans-serif;
-    text-shadow: 0 0 3px #fff, 0 0 10px#fff, 0 0 20px #8961ff, 0 0 25px #8961ff, 0 0 30px #8961ff, 0 0 45px #8961ff, 0 0 65px #8961ff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(137, 97, 255, 0.5), 0 0 25px rgba(137, 97, 255, 0.5), 0 0 30px rgba(137, 97, 255, 0.5), 0 0 45px rgba(137, 97, 255, 0.5), 0 0 80px #8961ff;
 }
 .css-title {
     margin: auto;
@@ -30,8 +30,69 @@ body {
     font-weight: lighter;
     color : cornsilk;
     text-shadow: 0 0 3px rgb(255, 164, 164), 0 0 10px rgb(255, 164, 164), 0 0 20px rgb(255, 164, 164);
+    padding-bottom: 5%;
 }
 
 .showing {
     display: block;
 }
+
+.css-toDo {
+    margin: 0 auto;
+    width: 240px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 0.2px solid rgba(148, 148, 148, 0.2);
+    border-left: none;
+    border-right: none;
+}
+
+.css-toDoList{
+    text-align: center;
+    list-style-type: none;
+    padding-left: 0;
+}
+.css-toDoForm {
+    text-align: center;
+}
+
+/*자바스크립트 코드 실행시 생겨나는 버튼 등은 html 문서에서 클래스 이름을 지정해주지 못한다!
+하지만 자바스크립트 코드 안에서 지정해줄 수 있는데, .className 을 사용하면 가능하다.
+아래 delBtn, li, span 모두 그러한 방식으로 지정해준 것!*/
+.css-delBtn{
+    border: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    float: right; /*버튼 오른쪽 정렬하는 방법*/
+    padding: 1px;
+}
+
+.css-li{
+    padding: 4px;
+    width: 200px;
+    margin-left: 10px;
+}
+
+.css-span{
+    display: inline-block;  /*span은 width가 적용되지 않는 태그. 하지만 display: inline-block을 통해 해결 가능하다*/
+    width: 150px;
+    text-align: left;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    word-break: break-all; /*줄바꿈 : 글자를 기준으로 줄바꿈*/
+}
+
+.css-input{
+    text-align: center;
+    border: 0px;
+    padding: 10px;
+    width: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input::placeholder{
+    color: rgba(148, 148, 148, 0.4);
+    font-style: italic;
+}
+

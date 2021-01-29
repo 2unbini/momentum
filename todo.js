@@ -43,10 +43,13 @@ const delBtn = document.createElement("button");
 const span = document.createElement("span");
 const newId = toDos.length + 1
 delBtn.innerText = "✗"
+delBtn.className = "css-delBtn"
 delBtn.addEventListener("click", deleteToDo);
 span.innerText = text;
-li.appendChild(delBtn);
+span.className = "css-span"
+li.className = "css-li"
 li.appendChild(span);
+li.appendChild(delBtn);
 li.id = newId;
 toDoList.appendChild(li);
 const toDoObj = {
