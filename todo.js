@@ -42,7 +42,7 @@ const li = document.createElement("li");
 const delBtn = document.createElement("button");
 const span = document.createElement("span");
 const newId = toDos.length + 1
-delBtn.innerText = "✗"
+delBtn.innerText = "x"
 delBtn.className = "css-delBtn"
 delBtn.addEventListener("click", deleteToDo);
 span.innerText = text;
@@ -66,6 +66,7 @@ const currentValue = toDoInput.value;
 paintToDo(currentValue);
 toDoInput.value="";
 }
+
 
 function loadToDos(){
 const loadedToDos = localStorage.getItem(TODOS_LS);
