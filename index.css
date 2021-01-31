@@ -139,6 +139,17 @@ input::placeholder{
 input:focus {
     outline: none;
 }
+.css-weather{
+    -webkit-animation: fadein 3s;
+    animation: fadein 3s;
+    text-align: right;
+    display: block;
+    font-size: small;
+    text-shadow: 0 0 3px cornsilk, 0 0 5px cornsilk;
+    padding-right: 10px;
+    padding-top: 10px;
+    color: rgb(51, 59, 59);
+}
 
 .bgImg{
     -webkit-animation: fadein 4s;
@@ -152,14 +163,3 @@ input:focus {
     object-fit: cover;
 }
 
-.css-weather{
-    -webkit-animation: fadein 3s;
-    animation: fadein 3s;
-    text-align: right;
-    display: block;
-    font-size: small;
-    text-shadow: 0 0 3px cornsilk, 0 0 5px cornsilk;
-    padding-right: 10px;
-    padding-top: 10px;
-    color: rgb(51, 59, 59);
-}
