@@ -25,6 +25,8 @@ function saveToDos(){
 localStorage.setItem(TODOS_LS, JSON.stringify(toDos));
 }
 
+/* 자동으로 TODOS_LS, toDos[]의 투두 리스트들의 id 정렬하는 함수!!
+    여기서 중요한 점은, local에 저장된 리스트의 id와 html에 보여지는 리스트들의 id가 서로 다르면 꼬여서 저장됨. 예를 들어, 3번째껄 삭제했는데 다시 로드해보니 2번째꺼가 삭제되는 상황. */
 function sortToDoId(){
     const toDoLen = toDos.length;
     for(i=0; i<toDoLen; i++){
@@ -37,6 +39,7 @@ function sortToDoId(){
     }
 }
 
+//js에서 클래스 생성 => .className
 function paintToDo(text){
 const li = document.createElement("li");
 const delBtn = document.createElement("button");
@@ -67,7 +70,7 @@ paintToDo(currentValue);
 toDoInput.value="";
 }
 
-
+//forEach는, 부모의 모든 자식객체들에 함수 적용하는 것.
 function loadToDos(){
 const loadedToDos = localStorage.getItem(TODOS_LS);
 if(loadedToDos!== null){

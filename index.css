@@ -12,6 +12,7 @@ body {
     font-size: medium;
 }
 
+/*keyframe은 무조건 default로 있고, 브라우저(safari, firefox, chrome...)마다 규격(?)에 맞는 keyframe을 생성해줘야 한다.*/
 @-webkit-keyframes fadein{
     from{
         opacity: 0;
