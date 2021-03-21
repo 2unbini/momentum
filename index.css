@@ -47,7 +47,7 @@ body {
   -webkit-animation: fadein 3s;
   animation: fadein 3s;
   color: rgb(255, 255, 255);
-  font-size: 50px;
+  font-size: 40px;
   letter-spacing: 13px;
   text-align: center;
   text-shadow: 0 0 4px rgba(255, 255, 255, 0.8),
@@ -91,7 +91,7 @@ body {
   border-right: none;
   background-color: rgba(0, 0, 0, 0.425);
   border-radius: 1em;
-  margin: 40px auto;
+  margin: 60px auto;
 }
 
 .css-toDoList {
