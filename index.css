@@ -1,166 +1,184 @@
-
+@font-face {
+  font-family: "LAB디지털";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
-    background-color: rgb(5, 7, 10);
+  background-color: rgb(5, 7, 10);
+  font-family: "LAB디지털";
+  margin: 0;
 }
 
 .css-tickin {
-    color : white;
-    text-shadow: 0 0 3px cornsilk, 0 0 10px cornsilk, 0 0 20px cornsilk;
-    margin-bottom: 10px;
-    margin-top: 8%;
-    font-size: medium;
+  color: white;
+  margin: 25px 0px;
+  text-shadow: 0 0 3px cornsilk, 0 0 10px cornsilk, 0 0 20px cornsilk;
+  font-size: medium;
 }
 
 /*keyframe은 무조건 default로 있고, 브라우저(safari, firefox, chrome...)마다 규격(?)에 맞는 keyframe을 생성해줘야 한다.*/
-@-webkit-keyframes fadein{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-@keyframes fadein{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
+.css-box {
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 20px rgba(255, 253, 249, 0.4);
+  padding-bottom: 15px;
+}
 
 .css-clock {
-    -webkit-animation: fadein 3s;
-    animation: fadein 3s;
-    color : rgb(255, 255, 255);
-    font-size: 50px;
-    text-align: center;
-    font-family: 'Chakra Petch', sans-serif;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(137, 97, 255, 0.5), 0 0 25px rgba(137, 97, 255, 0.5), 0 0 30px rgba(155, 121, 255, 0.5), 0 0 45px rgba(137, 97, 255, 0.5), 0 0 80px #7b79ff;
+  -webkit-animation: fadein 3s;
+  animation: fadein 3s;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  letter-spacing: 13px;
+  text-align: center;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.8),
+    0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(137, 97, 255, 0.5),
+    0 0 25px rgba(137, 97, 255, 0.5), 0 0 30px rgba(155, 121, 255, 0.5),
+    0 0 45px rgba(137, 97, 255, 0.5), 0 0 80px #7b79ff;
+  padding: 20px 0px;
+  margin-top: 7%;
 }
+
 .css-title {
-    margin: auto;
+  margin: 20px 0px;
 }
 
 .css-form,
 .css-greetings {
-    -webkit-animation: fadein 3s;
-    animation: fadein 3s;
-    display: none;
-    text-align: center;
-    font-size: 20px;
-    font-family: 'Chakra Petch', sans-serif;
-    font-weight: lighter;
-    color : cornsilk;
-    text-shadow: 0 0 3px rgb(255, 164, 164), 0 0 10px rgb(255, 164, 164), 0 0 20px rgb(255, 164, 164);
-    padding-bottom: 5%;
-    padding-top: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  -webkit-animation: fadein 3s;
+  animation: fadein 3s;
+  display: none;
+  text-align: center;
+  font-size: 16px;
+  font-weight: lighter;
+  color: cornsilk;
+  text-shadow: 0 0 3px rgb(255, 164, 164), 0 0 10px rgb(255, 164, 164),
+    0 0 20px rgb(255, 164, 164);
+  padding-bottom: 30px;
+  padding-top: 20px;
 }
 
-
-
-.showing {
-    display: block;
+.css-greetings {
+  margin: 0 auto;
 }
 
 .css-toDo {
-    -webkit-animation: fadein 4s;
-    animation: fadein 4s;
-    margin: 0 auto;
-    margin-top: 30px;
-    width: 240px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    box-shadow: 0px 0px 20px rgb(255, 253, 249);
-    border-right: none;
-    background-color: rgba(255, 253, 249, 0.3);
-    border-radius: 1em;
+  -webkit-animation: fadein 4s;
+  animation: fadein 4s;
+  width: 240px;
+  padding: 20px 5px 10px 5px;
+  box-shadow: 0px 0px 20px rgb(255, 253, 249);
+  border-right: none;
+  background-color: rgba(0, 0, 0, 0.425);
+  border-radius: 1em;
+  margin: 40px auto;
 }
 
-.css-toDoList{
-    text-align: center;
-    list-style-type: none;
-    padding-left: 0;
+.css-toDoList {
+  text-align: center;
+  list-style-type: none;
+  padding-left: 0;
 }
 .css-toDoForm {
-    text-align: center;
+  text-align: center;
+}
 
+.showing {
+  display: block;
 }
 
 /*자바스크립트 코드 실행시 생겨나는 버튼 등은 html 문서에서 클래스 이름을 지정해주지 못한다!
 하지만 자바스크립트 코드 안에서 지정해줄 수 있는데, .className 을 사용하면 가능하다.
 아래 delBtn, li, span 모두 그러한 방식으로 지정해준 것!*/
-.css-delBtn{
-    border: 0px;
-    background-color: rgba(0, 0, 0, 0);
-    float: right; /*버튼 오른쪽 정렬하는 방법*/
-    padding: 1px;
-    color: cornsilk;
+.css-delBtn {
+  border: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  float: right; /*버튼 오른쪽 정렬하는 방법*/
+  padding: 1px;
+  color: cornsilk;
 }
 
-.css-li{
-    -webkit-animation: fadein 3s;
-    animation: fadein 3s;
-    padding: 4px;
-    width: 200px;
-    margin-left: 10px;
+.css-li {
+  -webkit-animation: fadein 3s;
+  animation: fadein 3s;
+  padding: 4px;
+  width: 200px;
+  margin-left: 10px;
 }
 
-.css-span{
-    display: inline-block;  /*span은 width가 적용되지 않는 태그. 하지만 display: inline-block을 통해 해결 가능하다*/
-    width: 150px;
-    text-align: left;
-    font-size: small;
-    font-family: Arial, Helvetica, sans-serif;
-    word-break: break-all; /*줄바꿈 : 글자를 기준으로 줄바꿈*/
-    color: rgb(250, 246, 232);
+.css-span {
+  display: inline-block; /*span은 width가 적용되지 않는 태그. 하지만 display: inline-block을 통해 해결 가능하다*/
+  width: 150px;
+  text-align: left;
+  font-size: small;
+  font-family: Arial, Helvetica, sans-serif;
+  word-break: break-all; /*줄바꿈 : 글자를 기준으로 줄바꿈*/
+  color: rgb(250, 246, 232);
 }
 
-.css-input{
-    text-align: center;
-    border: 0px;
-    padding: 10px;
-    width: 200px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgba(0, 0, 0, 0);
-    color: cornsilk;
+.css-input {
+  text-align: center;
+  border: 0px;
+  padding: 10px;
+  width: 200px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgba(0, 0, 0, 0);
+  color: cornsilk;
 }
 
-input::placeholder{
-    color: cornsilk;
-    text-shadow: 0 0 3px cornsilk;
-    font-style: italic;
-    text-align: center;
+input::placeholder {
+  color: cornsilk;
+  text-shadow: 0 0 3px cornsilk;
+  font-style: italic;
+  text-align: center;
 }
 
 input:focus {
-    outline: none;
+  outline: none;
 }
-.css-weather{
-    -webkit-animation: fadein 3s;
-    animation: fadein 3s;
-    text-align: right;
-    display: block;
-    font-size: small;
-    text-shadow: 0 0 3px cornsilk, 0 0 5px cornsilk;
-    padding-right: 10px;
-    padding-top: 10px;
-    color: rgb(51, 59, 59);
-}
-
-.bgImg{
-    -webkit-animation: fadein 4s;
-    animation: fadein 4s;
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    object-fit: cover;
+.css-weather {
+  -webkit-animation: fadein 3s;
+  animation: fadein 3s;
+  text-align: right;
+  line-height: 20px;
+  display: block;
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  text-shadow: 0 0 5px cornsilk, 0 0 5px cornsilk;
+  padding-right: 30px;
+  padding-top: 20px;
+  color: rgb(51, 59, 59);
 }
 
+.bgImg {
+  -webkit-animation: fadein 4s;
+  animation: fadein 4s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}

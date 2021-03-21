@@ -8,25 +8,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <span class="js-weather css-weather"></span>
-    <div class="js-clock css-clock">
-        <h6 class="css-tickin">Time is Tickin'</h6>
-        <h1 class="js-title css-title">00:00:00</h1>
+
+    <div class="css-box">
+        <div class="js-clock css-clock">
+            <h6 class="css-tickin">Time is Tickin'</h6>
+            <h1 class="js-title css-title">00:00:00</h1>
+        </div>
+        <form class="js-form css-form">
+            <input class="js-input css-input" type="text" placeholder="what's your name?" />
+        </form>
+        <h4 class="js-greetings css-greetings">
+            <!--greetings-->
+        </h4>
     </div>
-    <form class="js-form css-form">
-        <input class="js-input css-input" type="text" placeholder="what's your name?" />
-    </form>
-    <h4 class="js-greetings css-greetings">
-        <!--greetings-->
-    </h4>
 
     <div class="css-toDo">
-    <form class="js-toDoForm css-toDoForm">
-        <input class="js-input css-input" type="text" placeholder="Add To Do List" />
-    </form>
-    <ul class="js-toDoList css-toDoList">
-    </ul>
+        <form class="js-toDoForm css-toDoForm">
+            <input class="js-input css-input" type="text" placeholder="Add To Do List" />
+        </form>
+        <ul class="js-toDoList css-toDoList">
+        </ul>
     </div>
+
+
 
     <script src="clock.js"></script>
     <script src="greeting.js"></script>

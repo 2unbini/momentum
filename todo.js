@@ -21,6 +21,10 @@ function deleteToDo(event){
     saveToDos();
 }
 
+function lineToDo(event){
+    // todo list에 line 생성
+}
+
 function saveToDos(){
 localStorage.setItem(TODOS_LS, JSON.stringify(toDos));
 }
@@ -50,6 +54,7 @@ delBtn.className = "css-delBtn"
 delBtn.addEventListener("click", deleteToDo);
 span.innerText = text;
 span.className = "css-span"
+//span.addEventListener("click", lineToDo);
 li.className = "css-li"
 li.appendChild(span);
 li.appendChild(delBtn);
